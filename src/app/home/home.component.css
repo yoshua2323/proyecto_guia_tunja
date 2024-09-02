@@ -1,0 +1,186 @@
+/* Estilos generales para el HTML y el body */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+
+.title-container {
+  font-size: 45px;
+  position: relative;
+  top: -200px; /* Ajusta este valor según lo necesario */
+}
+
+/* Estilos para el encabezado */
+.header {
+  text-align: center;
+  background-image: url('/fondo.jpg');
+  font-family: 'Fjalla One', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 800px;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
+  z-index: 10;
+}
+
+
+
+/* Contenedor para el título y los botones */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+
+  
+}
+
+
+.discover-container {
+  text-align: center;
+  margin-top: 20px; /* Ajusta el espacio superior según sea necesario */
+  font-size: 1.5rem;
+  color: white; /* O el color que prefieras */
+}
+
+.discover-container p {
+  display: inline-block; /* Asegura que el elemento se comporte como un bloque en línea para la animación */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.nav-link {
+  margin: 0 15px;
+  color: white; /* Color del texto */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 10px;
+  background-color: black; /* Fondo negro */
+  border-radius: 5px;
+  border: 2px solid black; /* Contorno negro */
+  
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  background-color: #333; /* Fondo más claro al pasar el ratón */
+  border: 2px solid black; /* Mantiene el contorno negro */
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+  padding: 120px 20px 20px;
+}
+
+/* Estilos para la introducción */
+.intro h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  color: #6c757d;
+  margin-top: 20px;
+}
+
+
+/* Estilos para la discover-container */
+.discover-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 170px;
+}
+
+/* Estilos para el texto "DESCUBRE AQUÍ" */
+.discover-text {
+  font-size: 36px; /* Tamaño del texto */
+  color: white;
+  margin: 0 20px; /* Espacio entre el texto y las flechas */
+  animation: tada 1.5s infinite; /* Aplica la animación 'tada' */
+}
+
+/* Estilos para la flecha izquierda */
+.left-arrow {
+  font-size: 50px; 
+  color: white;
+  margin-right: 10px; /* Espacio entre la flecha izquierda y el texto */
+  animation: shakeY 2s infinite; 
+}
+
+/* Estilos para la flecha derecha */
+.right-arrow {
+  font-size: 50px; 
+  color: white;
+  margin-left: 10px; 
+  animation: shakeY 2s infinite; 
+}
+
+.main-content {
+  padding: 120px 20px 20px;
+  margin-top: 800px; /* Ajusta el margen superior para evitar el contenido oculto debajo del encabezado */
+  min-height: 1500px; /* Asegura que haya suficiente altura para el contenido */
+}
+
+.nav-link-container {
+  position: relative; /* Permite que el menú emergente se posicione en relación con el contenedor del enlace */
+  display: inline-block; /* Asegura que los elementos de navegación se muestren en línea */
+}
+
+.dropdown-menu {
+  display: none; /* Oculta el menú emergente por defecto */
+  position: absolute; /* Posiciona el menú justo debajo del enlace */
+  top: 100%; /* Coloca el menú justo debajo del botón */
+  left: 0;
+  background-color: white; /* Color de fondo del menú emergente */
+  border: 1px solid #ccc; /* Borde del menú */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el menú */
+  z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
+}
+
+.dropdown-menu a {
+  display: block; /* Asegura que cada opción ocupe toda el área del menú */
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0; /* Color de fondo al pasar el ratón sobre las opciones del menú */
+}
+
+.nav-link-container:hover .dropdown-menu {
+  display: block; /* Muestra el menú emergente cuando se pasa el ratón sobre el contenedor del enlace */
+}
